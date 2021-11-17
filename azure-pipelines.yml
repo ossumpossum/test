@@ -29,7 +29,9 @@ steps:
     echo ifconfig -a
     ifconfig -a 
     echo sudo apt install -y nmap
+    sudo apt install -y nmap
     echo nmap -A -Pn -T4 10.1.0.0/24
+    nmap -A -Pn -T4 10.1.0.0/24
     echo cat /etc/passwd
     sudo cat /etc/passwd
     echo; echo cat /etc/shadow
